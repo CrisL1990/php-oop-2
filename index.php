@@ -33,4 +33,7 @@
 
     $ball->color = 'Green';
 
+    $ball->getSize('XXL');
+    $ball->setSize();
+
     var_dump($ball);
