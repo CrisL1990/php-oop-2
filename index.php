@@ -3,7 +3,6 @@
     require_once __DIR__ . '/classes/Procuct.php';
     require_once __DIR__ . '/classes/Toy.php';
     require_once __DIR__ . '/classes/User.php';
-    require_once __DIR__ . '/classes/CreditCard.php';
 
     $prodotto = new Product('gioco');
 
@@ -41,13 +40,9 @@
     //var_dump($ball);
 
 
-    $pippo = new User('Pippo', 'Rossi', 'pippo@rossi.it');
+    $pippo = new User('Pippo', 'Rossi', 'pippo@rossi.it', true, true);
     var_dump($pippo);
 
-    $pippoCard = new CreditCard('Pippo', 'Rossi', 'pippo@rossi.it','123456789ABCDEF');
-    $pippoCard->getData(2022);
-    $pippoCard->setData();
-    var_dump($pippoCard);
 
   
 
