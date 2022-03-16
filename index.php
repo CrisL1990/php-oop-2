@@ -2,6 +2,8 @@
 
     require_once __DIR__ . '/classes/Procuct.php';
     require_once __DIR__ . '/classes/Toy.php';
+    require_once __DIR__ . '/classes/User.php';
+    require_once __DIR__ . '/classes/CreditCard.php';
 
     $prodotto = new Product('gioco');
 
@@ -14,7 +16,7 @@
     $prodotto->setDescription("Il giocattolo è molto ben confezionato e robusto, ma rispetto al kong classico in cui si può spalmare del cibo all'interno (il mio cane lo adora e ci si intrattiene volentieri) questo con le croccette viene un po' snobbato. Allo stesso modo, non so per quale motivo, ma il mio jack russel, che è un'invasata di palline, questo gioco non lo percepisce come una palla...è strano da spiegare, ma è più facile che rubi un'arancia dal cesto della frutta piuttosto che farsi lanciare questa pallina. Di conseguenza, per quanto il gioco sia robusto, non lo ricomprerei.");
     $prodotto->getDescription();
 
-    var_dump($prodotto);
+    //var_dump($prodotto);
 
 
     echo '<br><br>';
@@ -36,4 +38,17 @@
     $ball->getSize('XXL');
     $ball->setSize();
 
-    var_dump($ball);
+    //var_dump($ball);
+
+
+    $pippo = new User('Pippo', 'Rossi', 'pippo@rossi.it');
+    var_dump($pippo);
+
+    $pippoCard = new CreditCard('Pippo', 'Rossi', 'pippo@rossi.it','123456789ABCDEF');
+    $pippoCard->getData(2022);
+    $pippoCard->setData();
+    var_dump($pippoCard);
+
+  
+
+    
