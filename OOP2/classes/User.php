@@ -46,4 +46,8 @@ class User {
     
     }
 
+    public function getDiscount(){
+        return $this->discount;
+    }
+
 }
